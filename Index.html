@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts"></div>
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="content">
+      <h1>Hey cutie 💖</h1>
+      <p>
+        I know I forget a lot of things…<br>
+        but from the day we met,<br>
+        <strong>you are the only thing my heart remembers.</strong>
+      </p>
+      <button onclick="goToPage(2)">Next ➜</button>
+    </div>
+    <audio id="song1" src="song1.mp3"></audio>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <div class="content">
+      <img src="couple.jpg" class="couple-img" alt="Us 💕">
+      <p>
+        I know you were the first one to text me,<br>
+        and I thank God every single day that you did. ✨<br><br>
+        You came into my life so quietly,<br>
+        but somehow made everything brighter.<br><br>
+        I am so lucky to have you,<br>
+        and I promise to give you<br>
+        <strong>all my love — every single day.</strong> 💕
+      </p>
+      <button onclick="goToPage(3)">Next ➜</button>
+    </div>
+    <audio id="song2" src="song2.mp3"></audio>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="page3">
+    <div class="content">
+      <img src="couple2.jpg" class="couple-img" alt="Forever ❤️">
+
+      <p id="proposalText">
+        I want to hold your hands forever<br>
+        and promise to never let them go. 🤍<br><br>
+
+        I want to walk a thousand miles with you<br>
+        before we ever think of resting.<br><br>
+
+        And yes… I want to do <strong>pyaru pyaru</strong><br>
+        with you till we are 50 😉<br><br>
+
+        <strong>Miss Pihu</strong>,<br>
+        I am all yours and you are all mine. 💕<br><br>
+
+        Will you be my <strong>Valentine forever</strong>? ❤️
+      </p>
+
+      <div class="buttons">
+        <button onclick="yesClicked()">YES 💖</button>
+        <button id="noBtn" onclick="noClicked()">NO 🙈</button>
+      </div>
+    </div>
+    <audio id="song3" src="song3.mp3"></audio>
+  </section>
+
+  <!-- Confetti -->
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
